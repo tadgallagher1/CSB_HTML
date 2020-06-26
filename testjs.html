@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script> 
+        function average() {
+            var numOne=parseInt(document.getElementById("num1").value);
+            alert(numOne);
+            var numTwo=parseInt(document.getElementById("num2").value);
+            alert(numTwo);
+            var sum=((numOne+numTwo)/2);
+            alert(sum);
+            document.getElementById("avg").value=sum;
+        }  
+    function sayHi(nameAndHello) {
+        document.getElementById("hello").innerHTML=nameAndHello;
+        alert('nameAndHello=>'+nameAndHello);
+    }     
+    </script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Average Calculator</title>
+</head>
+<body>
+    <br>
+    <input type="text" id="num1">
+    <br>
+    <input type="text" id="num2">
+    <br>
+    <input type="button" value="Your Average" onclick="average()">
+    <br>
+    <input type="button" value="Say Hi" onclick="sayHi('Hello Tim')">
+    <input type="text" id="avg">   
+    <br>
+    <br>
+    <p id="hello"></p> 
+</body>
+</html>
